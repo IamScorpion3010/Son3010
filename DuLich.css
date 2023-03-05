@@ -1,0 +1,61 @@
+.avt {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 50px;
+    overflow: hidden;
+}
+
+body {
+    background-image: url(./img/DuLich/DuLich.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.colum {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main {
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom:50px;
+}
+
+h3 {
+    font-size: 2.5rem;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: navajowhite;
+    border-radius:15px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
