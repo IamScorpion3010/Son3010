@@ -1,0 +1,411 @@
+main {
+    margin: 90px 50px;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    font-size: 40px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+    height: 36px;
+    padding: 0 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+
+.search-button {
+    height: 36px;
+    margin-left: 10px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.results-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+:export {
+    bpLarge: 1024;
+    bpLargePlus: 1025;
+    bpMedium: 768;
+    bpXLarge: 1400;
+    bpXXLarge: 1920px;
+    globalNavHeight: 48px;
+    siteMaxWidth: 1920px
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+.mvm-app [role=button],
+.mvm-app button {
+    letter-spacing: .025rem;
+    line-height: 1.2;
+}
+
+/* Định dạng cả trang */
+.mvm-app {
+    font-size: 10px;
+    height: 100%
+}
+
+/* Định dạng viền trang */
+.mvm-app body {
+    margin: 0;
+    overflow: visible;
+    overflow: initial;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: none;
+    padding: 0;
+    -ms-scroll-chaining: none
+}
+
+
+a,
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    float: none;
+    font-size: 100%;
+    font-weight: 400;
+    margin: 0;
+    opacity: inherit;
+    outline: 0 none;
+    padding: 0;
+    text-shadow: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+.Card {
+    background: #fff;
+    border: 2px solid transparent;
+    border-radius: .5rem;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1);
+    height: 100%;
+    padding: 15px 0;
+    position: relative;
+    transition: box-shadow .5s ease
+}
+
+@media (min-width:768px) {
+    .Card {
+        padding: 0 0 20px
+    }
+}
+
+.Card .Card_Subhead {
+    height: 25px;
+    left: 8px;
+    position: absolute;
+    top: 4px
+}
+
+@media (min-width:768px) {
+    .Card .Card_Subhead {
+        left: 12px;
+        top: 8px
+    }
+}
+
+.Card .Card_Subhead .Card_Label {
+    display: inline-block;
+    font-family: "AvenirNext-DemiBold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600
+}
+
+@media (min-width:768px) {
+    .Card .Card_Model-image {
+        margin-top: 15px
+    }
+}
+
+/* Căn chỉnh viền ngoài thẻ xe */
+.Card .Card_Model-image .Card_Model-image-cta:after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.Card .Card_Model-image .Card_Model-image-cta:focus {
+    outline: none
+}
+
+.Card .Card_Model-image .Card_Model-image-cta:focus:after {
+    border-radius: .5rem;
+    outline: 3px solid #62c7ff;
+    outline-offset: 0
+}
+
+.Card .Card_Model-image img {
+    width: 100%
+}
+
+/*Căn chỉnh Tên xe*/
+.Card .Card_model-name {
+    border-bottom: 1px solid hsla(0, 0%, 84.7%, .35);
+    font-family: "AvenirNext-Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-bottom: 8px;
+    padding-bottom: 8px
+}
+
+.Card .Card_Infor .Card_Number,
+.Card .Card_below .Card_Number {
+    font-family: "AvenirNext-DemiBold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    margin-right: 4px
+}
+
+@media (min-width:768px) {
+
+    .Card .Card_Infor .Card_Number,
+    .Card .Card_below .Card_Number {
+        font-size: 1.4rem
+    }
+}
+
+/* Chỉnh phần dưới của thẻ */
+.Card .Card_Infor .Card_Label,
+.Card .Card_below .Card_Label {
+    font-family: "AvenirNext-Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase
+}
+
+/* Chỉnh dấu sao */
+.Card .Card_Infor .Card_Label>.Dau_Sao,
+.Card .Card_below .Card_Label>.Dau_Sao {
+    background: none;
+    border: 0;
+    color: #007cc0;
+    font-size: 1rem;
+    line-height: 1;
+    outline-offset: 1px;
+    padding: 0;
+    position: relative;
+    z-index: 1
+}
+
+/* Đường kẻ trong từng thẻ */
+.Card .Card_Line {
+    padding: 10px 8px 0
+}
+
+@media (min-width:768px) {
+    .Card .Card_Line {
+        padding: 10px 20px 0
+    }
+}
+
+/* Chỉnh sửa khung button */
+.Card .Card_Format_Button {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 13px 10px 0;
+}
+
+@media (min-width:768px) {
+    .Card .Card_Format_Button {
+        padding: 13px 20px 0
+    }
+}
+
+@media (min-width:1024px) {
+    .Card .Card_Format_Button {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin: 0 -3px
+    }
+}
+
+/* Chỉnh sửa button */
+.Card .Card_Format_Button .Card_Button {
+    align-items: normal;
+    background: #fff;
+    border: 2px solid #007cc0;
+    border-radius: 15px;
+    color: #007cc0;
+    display: flex;
+    font-family: "AvenirNext-DemiBold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    height: 27px;
+    justify-content: center;
+    letter-spacing: .025rem;
+    line-height: 1.7;
+    padding: 2px 5px;
+    text-transform: uppercase;
+    width: 140px;
+    margin: 0 0 8px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.Card .Card_Format_Button .Card_Button:hover {
+    background: #007cc0;
+    border-color: #007cc0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.Card .Card_Format_Button .Card_Button:last-child {
+    margin: 0
+}
+
+@media (min-width:1024px) {
+    .Card .Card_Format_Button .Card_Button {
+        margin: 0;
+        max-width: 140px;
+        min-width: 47%;
+        width: auto
+    }
+}
+
+.Card:hover {
+    box-shadow: 0
+}
+
+@media (min-width:1024px) {
+    .Card:hover {
+        box-shadow: 0 0 7px 2px hsla(0, 0%, 50.2%, .8)
+    }
+}
+
+.Card:focus {
+    outline-offset: 0
+}
+
+/* Chỉnh sửa khung card */
+.Card_Custom {
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1);
+    height: 100%;
+    padding: 15px 0;
+    position: relative;
+    transition: box-shadow .5s ease
+}
+
+@media (min-width:768px) {
+    .Card_Custom {
+        padding: 0 0 20px
+    }
+}
+
+.Card_Custom:hover {
+    box-shadow: 0
+}
+
+@media (min-width:1024px) {
+    .Card_Custom:hover {
+        box-shadow: 0 0 7px 2px hsla(0, 0%, 50.2%, .8)
+    }
+}
+
+.Card_Custom:focus {
+    outline-offset: 0
+}
+
+.Models_All {
+    margin-bottom: 20px
+}
+
+.Models_All .Models_Card_Grid {
+    display: grid;
+    grid-gap: 10px;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+    list-style-type: none;
+    padding: 0
+}
+
+@media (min-width:768px) {
+    .Models_All .Models_Card_Grid {
+        grid-gap: 20px;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(31%, 1fr))
+    }
+}
+
+@media (min-width:1024px) {
+    .Models_All .Models_Card_Grid {
+        grid-gap: 25px;
+        gap: 25px;
+        grid-template-columns: repeat(auto-fill, minmax(23%, 1fr))
+    }
+}
+
+@media (min-width:1400px) {
+    .Models_All .Models_Card_Grid {
+        grid-template-columns: repeat(auto-fill, minmax(17%, 1fr))
+    }
+}
+
+.ModelSelect {
+    background: #f9f9f9;
+    height: 100%;
+    min-height: inherit;
+    padding: 20px 15px
+}
+
+@media (min-width:768px) {
+    .ModelSelect {
+        padding: 25px 25px 40px;
+        padding-left: 30px;
+        padding-right: 30px
+    }
+}
+
+
+
+.Card_Model-image .Card_Model-image-cta:after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

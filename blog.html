@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Icon My Web -->
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <!-- Link font Icon -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/blog.css">
+  <link rel="stylesheet" href="./css/general.css">
+  <link rel="stylesheet" href="./css/respontive.css">
+  <title>FigCar</title>
+</head>
+
+<body>
+  <!-- header section -->
+  <header class="header">
+    <div id="menu-bar">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <a class="logo" href="./index.html">Hon<span>da</span></a>
+    <!-- nav section -->
+    <nav class="nav-bar">
+      <a href="./index.html">Home</a>
+      <div id="verhicles-car">
+        Vehicles
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <div class="nav-shop-level">
+          <a href="./shop.html"><i class="fa-solid fa-cart-shopping"></i> Shop</a>
+        </div>
+      </div>
+      <a href="./blog.html">Blog</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <!-- loggin  -->
+    <div id="login">
+      <button id="login-btn" class="user-active">Login</button>
+      <i class="fa-solid fa-user user-active icon-user"></i>
+      <div class="nav-bar-account">
+        <h2>Sign In</h2>
+        <div class="account-info">
+          <h5>Username</h5>
+          <i class="fa-sharp fa-solid fa-xmark" id="button-user"></i>
+          <i class="fa-regular fa-user"></i>
+          <input id="name-user" type="text" placeholder="Type your username">
+          <div class="dash-nav"></div>
+
+          <h5>Password</h5>
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Type your password">
+          <div class="dash-nav"></div>
+
+          <button>Sign In</button>
+          <div class="dash-nav-info">
+            <a href="#"><i class="fa-brands fa-facebook fa-beat" style="color: #3673dd;"></i></a>
+            <a href="#"><i class="fa-brands fa-google fa-beat" style="color: #f56161;"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-beat" style="color: #367bf2;"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main_blog">
+    <section id="blog">
+      <div class="content_item">
+        <h2 class="text_box_h2">Choose Your Car</h2>
+        <a class="text_box_a" href="./shop.html">Learn More</a>
+      </div>
+
+      <div class="select_img">
+        <img src="./imagesBlog/xe1.jpeg" alt="" onclick="imgBlog(1) ">
+        <img src="./imagesBlog/xe2.jpeg" alt="" onclick="imgBlog(2) ">
+        <img src="./imagesBlog/xe3.jpeg" alt="" onclick="imgBlog(3) ">
+        <img src="./imagesBlog/xe4.jpeg" alt="" onclick="imgBlog(4) ">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="ft-top">
+      <a class="logo" href="./index.html">Hon<span>da</span></a>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.aliqua. Ut enim ad minim.
+        <br>
+        Lorem ipsum dolor sit amet.
+      </p>
+      <form action="">
+        <input type="email" placeholder="email@example.com">
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="ft-top-icon-contact">
+        <a href="http://"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="http://"><i class="fa-brands fa-twitter"></i></a>
+        <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+        <a href="http://"><i class="fa-brands fa-youtube"></i></a>
+        <a href="http://"><i class="fa-brands fa-dribbble"></i></a>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <p>
+        © 2023 Honda.<a href="./contact.html"> Made with <i class="fa-regular fa-heart"></i> by Group Three</a>.
+      </p>
+      <div>
+        Need help? Visit the
+        <a href="./contact.html">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="active-move-page fa-bounce"><i class="fa-solid fa-arrow-up" style="color: #fff;"></i></a>
+
+  <!-- Script -->
+  <script src="./js/main.js"></script>
+  <script src="https://kit.fontawesome.com/1ed0a5adb2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

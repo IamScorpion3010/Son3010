@@ -1,0 +1,98 @@
+@media (max-width:991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width:768px) {
+  #login .icon-user {
+    display: block;
+    opacity: 1;
+  }
+
+  #login-btn {
+    display: none;
+    opacity: 0;
+  }
+
+  #menu-bar {
+    display: block;
+    opacity: 1;
+  }
+
+  .nav-bar {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    top: 90%;
+    display: none;
+  }
+
+  .nav-bar.active {
+    display: block;
+  }
+
+  .nav-bar a {
+    margin-bottom: 1.2rem;
+    display: block;
+  }
+
+  .sticky {
+    box-shadow: 0 0 0 rgb(255, 255, 255);
+  }
+
+}
+
+@media (max-width:450px) {
+  html {
+    font-size: 30%;
+  }
+
+  .nav-bar-account {
+    left: 15vw;
+  }
+
+  .nav-bar-account h2 {
+    font-size: 2.2rem;
+  }
+
+  .section-one-top {
+    margin-top: -3rem;
+    flex-direction: column;
+  }
+
+  .section-one-top>img {
+    margin-left: 35rem;
+  }
+
+  .section-one-top {
+    margin-bottom: 0rem;
+  }
+
+  .st2-contain-item i {
+    right: -15rem;
+  }
+
+  .st2-item-active p {
+    max-width: 22.5rem;
+  }
+
+  .st2-item-active i {
+    right: -15rem;
+    top: -9rem;
+    color: #fff;
+  }
+
+  .st2-item-active {
+    margin-left: -.7rem;
+    padding: 1rem;
+  }
+
+  .ft-bottom {
+    flex-direction: column;
+  }
+
+  .ct-content {
+    flex-direction: column;
+  }
+}

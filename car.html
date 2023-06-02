@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Icon My Web -->
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <!-- Link font Icon -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/shop.css">
+  <link rel="stylesheet" href="./css/general.css">
+  <link rel="stylesheet" href="./css/respontive.css">
+  <title>FigCar</title>
+</head>
+
+<body>
+  <!-- header section -->
+  <header class="header">
+    <div id="menu-bar">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <a class="logo" href="./index.html">Hon<span>da</span></a>
+    <!-- nav section -->
+    <nav class="nav-bar">
+      <a href="./index.html">Home</a>
+      <div id="verhicles-car">
+        Vehicles
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <div class="nav-shop-level">
+          <a href="./shop.html"><i class="fa-solid fa-cart-shopping"></i> Shop</a>
+        </div>
+      </div>
+      <a href="./blog.html">Blog</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <!-- loggin  -->
+    <div id="login">
+      <button id="login-btn" class="user-active">Login</button>
+      <i class="fa-solid fa-user user-active icon-user"></i>
+      <div class="nav-bar-account">
+        <h2>Sign In</h2>
+        <div class="account-info">
+          <h5>Username</h5>
+          <i class="fa-sharp fa-solid fa-xmark" id="button-user"></i>
+          <i class="fa-regular fa-user"></i>
+          <input id="name-user" type="text" placeholder="Type your username">
+          <div class="dash-nav"></div>
+
+          <h5>Password</h5>
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Type your password">
+          <div class="dash-nav"></div>
+
+          <button>Sign In</button>
+          <div class="dash-nav-info">
+            <a href="#"><i class="fa-brands fa-facebook fa-beat" style="color: #3673dd;"></i></a>
+            <a href="#"><i class="fa-brands fa-google fa-beat" style="color: #f56161;"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-beat" style="color: #367bf2;"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <video id="video" src="./banner/banner.mp4 " autoplay loop></video>
+    <div class="banner">
+      <div class="hero-vehicle-info">
+        <div class="hero-row">
+          <div class="msrp-content">
+            <div class="label-container">
+              <div class="hero-label">
+                <span class="hero-label-text">STARTING MSRP</span>
+              </div>
+              <div class="hero-label-value">$23,800</div>
+            </div>
+          </div>
+
+          <div class="offer-content">
+            <div class="offer-heading">Honda Loyalty Appreciation Offer</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="highlight">
+          <div class="highlight-subheading">Available</div>
+          <div class="highlight-heading">
+            Real Time AWD ™
+          </div>
+        </div>
+
+        <div class="highlight">
+          <div class="highlight-subheading">Available</div>
+          <div class="highlight-heading">
+            Honda Sensing ®
+          </div>
+        </div>
+
+        <div class="highlight">
+          <div class="highlight-subheading">Available </div>
+          <div class="highlight-heading">
+            Wireless CarPlay ®
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Details -->
+    <section class="product-details">
+      <div class="col-lg-6">
+        <div id="Info-color" class="product-details__img">
+          <img id="Color" src="./color_xe/1.png" alt="">
+          <div class="product-details__buttons">
+            <button class="Button_white" onclick="pickColor(1)"></button>
+            <button class="Button_gray" onclick="pickColor(2)"></button>
+            <button class="Button_black" onclick="pickColor(3)"></button>
+            <button class="Button_red" onclick="pickColor(4)"></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-xl-6">
+        <div class="product-details__top">
+          <h3 class="product-details__title">HR-V<span>$23.800</span> </h3>
+        </div>
+        <div class="product-details__reveiw">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <span>2 Customer Reviews</span>
+        </div>
+        <div class="product-details__content">
+          <p class="product-details__content-text1">
+            The HR-V was made to excite. With flowing lines and elevated finishing touches, like slender LED
+            headlights and available 18-inch alloy wheels, this SUV achieves an unmistakably premium
+            aesthetic.
+          </p>
+          <p class="product-details__content-text2">
+            Available in store</p>
+        </div>
+
+        <div class="product-details_buttons">
+          <div class="product-details_buttons-1">
+            <a href="./shop.html" class="thm-btn">Add to wishlist</a>
+          </div>
+
+          <div class="product-details_buttons-2">
+            <a href="./shop.html" class="thm-btn">Add to cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review -->
+    <section class="review">
+      <div class="container">
+        <div class="comments-area">
+          <div class="review__title">
+            <h3>2 reviews</h3>
+          </div>
+          <!--Start Comment Box-->
+          <div class="comment-box">
+            <div class="comment">
+              <div class="author-thumb">
+                <figure class="thumb"><img src="./images/customer1.png" alt="">
+                </figure>
+              </div>
+
+              <div class="review__content">
+                <div class="review__content-top">
+                  <div class="info">
+                    <h2>Kevin martin <span>22 Nov, 2022</span></h2>
+                  </div>
+                  <div class="reply-btn">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="review__content-bottom">
+                  <p>Honda HR-V 2023 has a higher price but comes with significant improvements in design, engine,
+                    chassis, and technology, making it more appealing to customers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End Comment Box-->
+
+          <!--Start Comment Box-->
+          <div class="comment-box">
+            <div class="comment">
+              <div class="author-thumb">
+                <figure class="thumb"><img src="./images/customer2.png" alt="">
+                </figure>
+              </div>
+
+              <div class="review__content">
+                <div class="review__content-top">
+                  <div class="info">
+                    <h2>Sarah Albert <span>30 Dec, 2022</span></h2>
+                  </div>
+                  <div class="reply-btn">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="review__content-bottom">
+                  <p>The Honda HR-V 2023 offers commendable sound insulation, providing a good level of environmental
+                    soundproofing. However, some customers have noticed that at high speeds, there is a noticeable echo
+                    from the engine roar, which could be improved.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End Comment Box-->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="ft-top">
+      <a class="logo" href="./index.html">Hon<span>da</span></a>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.aliqua. Ut enim ad minim.
+        <br>
+        Lorem ipsum dolor sit amet.
+      </p>
+      <form action="">
+        <input type="email" placeholder="email@example.com">
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="ft-top-icon-contact">
+        <a href="http://"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="http://"><i class="fa-brands fa-twitter"></i></a>
+        <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+        <a href="http://"><i class="fa-brands fa-youtube"></i></a>
+        <a href="http://"><i class="fa-brands fa-dribbble"></i></a>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <p>
+        © 2023 Honda.<a href="./contact.html"> Made with <i class="fa-regular fa-heart"></i> by Group Three</a>.
+      </p>
+      <div>
+        Need help? Visit the
+        <a href="./contact.html">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="active-move-page fa-bounce"><i class="fa-solid fa-arrow-up" style="color: #fff;"></i></a>
+
+  <!-- Script -->
+  <script src="./js/main.js"></script>
+  <script src="https://kit.fontawesome.com/1ed0a5adb2.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
